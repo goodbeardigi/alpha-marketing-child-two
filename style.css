@@ -1,0 +1,25 @@
+/*
+Theme Name: Alpha Child
+Theme URI: https://alpha.org/
+Author: Max Lyuchin
+Author URI: https://heartwp.com/
+Description: Child theme for Alpha websites.
+Primary Branch: main
+GitHub Theme URI: https://github.com/alpha-global/alpha-marketing-child-theme
+Version: 1.2.11
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: alpha
+Template: alpha-marketing-theme-two
+*/
+
+
+/* Fix donation form on mobile */
+
+#mongo-form {
+    min-width: 0 !important;
+}
+
+#mongo-form * {
+    min-width: 0 !important;
+}

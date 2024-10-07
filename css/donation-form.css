@@ -1,0 +1,432 @@
+#bbox-root {
+    display: flex;
+    justify-content: center;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+#bbox-root .BBFormContainer .BBFormSection:not(.BBFormButtonRow) {
+    box-shadow: -1px -1px 15px 6px rgba(0, 0, 0, 0.14);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 24px 0;
+}
+#bbox-root .BBFormContainer .BBFormSection:nth-child(n + 4):not(.BBFormButtonRow):not(.BBDFormSectionComments):not(.BBFormSectionGiftAttributes):not(.BBFormAddressBlock):not(.BBFormSectionRecurrenceInfo) {
+    position: relative;
+    max-height: 75px;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.25s, padding 0.25s;
+    border-left: 2px solid #e42312;
+}
+#bbox-root .BBFormContainer .BBFormSection:nth-child(n + 4):not(.BBFormButtonRow):not(.BBDFormSectionComments):not(.BBFormSectionGiftAttributes):not(.BBFormAddressBlock):not(.BBFormSectionRecurrenceInfo) .BBFormSectionHeading {
+    padding-top: 16px;
+}
+#bbox-root .BBFormContainer .BBFormSection:nth-child(n + 4):not(.BBFormButtonRow):not(.BBDFormSectionComments):not(.BBFormSectionGiftAttributes):not(.BBFormAddressBlock):not(.BBFormSectionRecurrenceInfo) legend {
+    cursor: pointer;
+}
+#bbox-root .BBFormContainer .BBFormSection:nth-child(n + 4):not(.BBFormButtonRow):not(.BBDFormSectionComments):not(.BBFormSectionGiftAttributes):not(.BBFormAddressBlock):not(.BBFormSectionRecurrenceInfo).active {
+    max-height: 2000px;
+    transition: max-height 0.75s, padding 0.25s;
+    padding: 0 0 24px;
+}
+#bbox-root .BBFormContainer .BBFormSection:nth-child(n + 4):not(.BBFormButtonRow):not(.BBDFormSectionComments):not(.BBFormSectionGiftAttributes):not(.BBFormAddressBlock):not(.BBFormSectionRecurrenceInfo):before {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+    content: "\e806";
+    font-family: AlphaOrgIcons !important;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+#bbox-root .BBFormContainer .BBFormSection:nth-child(n + 4):not(.BBFormButtonRow):not(.BBDFormSectionComments):not(.BBFormSectionGiftAttributes):not(.BBFormAddressBlock):not(.BBFormSectionRecurrenceInfo).active:before {
+    content: "\e805";
+}
+#bbox-root .BBFormContainer .BBFormFieldContainer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    position: relative;
+}
+#bbox-root .BBFormContainer .BBFormFieldContainer > div {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+}
+#bbox-root .BBFormContainer .BBThreeFields input,
+#bbox-root .BBFormContainer .BBThreeFields select {
+    -ms-flex-preferred-size: 30%;
+    flex-basis: 30%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    width: unset;
+    max-width: 100%;
+}
+#bbox-root .BBFormContainer .BBFormFieldContainer[data-country-format-for="2"] input,
+#bbox-root .BBFormContainer .BBFormFieldContainer[data-country-format-for="2"] select {
+    width: unset;
+    -ms-flex: 1 1 49%;
+    flex: 1 1 49%;
+}
+#bbox-root .BBFormContainer .BBFormRadioList {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+@media all and (max-width: 600px) {
+    #bbox-root .BBFormContainer .BBFormRadioList {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+#bbox-root .BBFormContainer .BBFormRadioList .BBFormRadioItem {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+#bbox-root .BBFormContainer .BBFormFieldContainerGivingLevels {
+    margin-bottom: 12px;
+}
+#bbox-root .BBFormContainer .BBFormSectionHeading {
+    border-width: 0;
+    padding-top: 0;
+}
+#bbox-root .BBFormContainer .BBFormSectionHeading label {
+    font-family: ITCAvantGardeStd, sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+#bbox-root .BBFormContainer .BBFormFieldLabel {
+    float: none;
+    text-align: left;
+    color: #5d6368;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+    font-size: 16px;
+    font-weight: 400;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+}
+#bbox-root .BBFormContainer .BBDFormSectionComments .BBFormFieldLabel {
+    margin-left: 0;
+}
+#bbox-root .BBFormContainer .BBFormSelectList,
+#bbox-root .BBFormContainer .BBFormTextbox {
+    height: 50px;
+}
+#bbox-root .BBFormContainer .BBFormTextbox {
+    background-image: none;
+}
+#bbox-root .BBFormContainer .BBFormSelectList {
+    padding-right: 12px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10px' width='15px'%3E%3Ctext x='0' y='10' fill='gray'%3E%E2%96%BE%3C/text%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 1.5em 1em;
+    background-position: right center;
+    background-clip: border-box;
+    text-transform: capitalize;
+}
+#bbox-root .BBFormContainer .BBFormSelectList,
+#bbox-root .BBFormContainer .BBFormTextArea,
+#bbox-root .BBFormContainer .BBFormTextbox {
+    display: block;
+    margin: 12px 0 0;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    word-break: normal;
+    text-align: left;
+    position: relative;
+    overflow: visible;
+    border: 1px solid #d3d3d3;
+    transition: all 0.3s ease-in-out;
+    outline: 0;
+    color: #1d1f20;
+    max-width: 100%;
+    border-radius: 6px;
+}
+#bbox-root .BBFormContainer .BBFormSelectList:not(:last-child),
+#bbox-root .BBFormContainer .BBFormTextArea:not(:last-child),
+#bbox-root .BBFormContainer .BBFormTextbox:not(:last-child) {
+    margin-right: 1%;
+}
+#bbox-root .BBFormContainer .BBFormSelectList:-ms-input-placeholder,
+#bbox-root .BBFormContainer .BBFormTextArea:-ms-input-placeholder,
+#bbox-root .BBFormContainer .BBFormTextbox:-ms-input-placeholder {
+    text-transform: capitalize;
+    color: #8b949b;
+}
+#bbox-root .BBFormContainer .BBFormSelectList::placeholder,
+#bbox-root .BBFormContainer .BBFormTextArea::placeholder,
+#bbox-root .BBFormContainer .BBFormTextbox::placeholder {
+    text-transform: capitalize;
+    color: #8b949b;
+}
+#bbox-root .BBFormContainer .BBFormSelectList:focus,
+#bbox-root .BBFormContainer .BBFormSelectList:hover,
+#bbox-root .BBFormContainer .BBFormTextArea:focus,
+#bbox-root .BBFormContainer .BBFormTextArea:hover,
+#bbox-root .BBFormContainer .BBFormTextbox:focus,
+#bbox-root .BBFormContainer .BBFormTextbox:hover {
+    border: 1px solid #e42312;
+}
+#bbox-root .BBFormContainer .BBFormTextArea {
+    padding: 12px 24px;
+    height: 60px;
+}
+#bbox-root .BBFormContainer .BBFormRadioLabelGivingLevel {
+    float: none;
+    padding: 0;
+    border-radius: 8px;
+    font-size: 1.4rem;
+    border: 1px solid #29323f;
+    font-weight: 800;
+}
+#bbox-root .BBFormContainer .BBFormRadioLabelGivingLevel.BBFormRadioLabelGivingLevelSelected {
+    border-color: #e42312;
+}
+#bbox-root .BBFormContainer .BBFormRadioLabelGivingLevel.BBFormRadioLabelGivingLevelSelected span {
+    color: #fff;
+}
+#bbox-root .BBFormContainer .BBFormRadioLabelGivingLevel.BBFormRadioLabelGivingLevelSelected input {
+    margin: 13px 0 14px -36px;
+}
+#bbox-root .BBFormContainer .BBFormRadioLabelGivingLevel span {
+    padding: 18px;
+    display: block;
+    color: #000;
+}
+#bbox-root .BBFormContainer .BBFormRadioLabelGivingLevel.BBFormRadioLabelGivingLevelNotSelected:hover {
+    background: unset;
+}
+#bbox-root .BBFormContainer .BBFormGiftOtherAmount {
+    height: 35px;
+    display: none;
+    width: 100px;
+    padding: 0 6px;
+}
+#bbox-root .BBFormContainer .BBFormRadioLabelGivingLevelSelected .BBFormGiftOtherAmount {
+    display: inline;
+    margin: 0;
+}
+@media all and (max-width: 600px) {
+    #bbox-root .BBFormContainer .BBFormRadioLabelGivingLevelSelected .BBFormGiftOtherAmount {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+    }
+    #bbox-root .BBFormContainer .BBFormRadioAmount,
+    #bbox-root .BBFormContainer .BBFormRadioDescriptionOther {
+        font-size: 20px;
+    }
+}
+#bbox-root .BBFormContainer .BBDFormSectionGiftInfo .BBFormFieldUKGiftAidLabel + a {
+    margin: 12px 0 12px 32px;
+}
+#bbox-root .BBFormContainer .BBDFormSectionGiftInfo .BBFormFieldUKGiftAidLabel + a ~ label {
+    color: #8b949b;
+}
+#bbox-root .BBFormContainer input[type="checkbox"],
+#bbox-root .BBFormContainer input[type="radio"] {
+    position: absolute;
+    z-index: -99999;
+    opacity: 0;
+    visibility: hidden;
+}
+#bbox-root .BBFormContainer .BBFormCheckbox,
+#bbox-root .BBFormContainer .BBFormChecklistLabel {
+    padding-left: 30px;
+    font-weight: 400;
+    line-height: 1.4;
+    width: unset;
+}
+#bbox-root .BBFormContainer .BBFormCheckbox:after,
+#bbox-root .BBFormContainer .BBFormCheckbox:before,
+#bbox-root .BBFormContainer .BBFormChecklistLabel:after,
+#bbox-root .BBFormContainer .BBFormChecklistLabel:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: 3px;
+    cursor: pointer;
+}
+#bbox-root .BBFormContainer .BBFormCheckbox:before,
+#bbox-root .BBFormContainer .BBFormChecklistLabel:before {
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    background: #fff;
+    transition: background 0.25s;
+}
+#bbox-root .BBFormContainer .BBFormCheckbox:after,
+#bbox-root .BBFormContainer .BBFormChecklistLabel:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' focusable='false' viewBox='0 0 24 24' xml:space='preserve' class='mat-checkbox-checkmark'%3E%3Cpath fill='none' stroke='white' d='M4.1,12.7 9,17.6 20.3,6.3' class='mat-checkbox-checkmark-path'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 1px 1px;
+    background-clip: border-box;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+#bbox-root .BBFormContainer input[type="radio"] label:before {
+    border-radius: 50%;
+}
+#bbox-root .BBFormContainer input[type="checkbox"]:checked + label:before {
+    background: #4d4da6;
+    transition: background 0.25s;
+}
+#bbox-root .BBFormContainer input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transition: opacity 0.25s;
+}
+#bbox-root .BBFormContainer .BBFormFieldRecurrenceInfo .BBRecurrenceFieldContainer span {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+#bbox-root .BBFormContainer .BBFormFieldRecurrenceInfo .BBRecurrenceFieldContainer span select {
+    margin: 0 12px;
+}
+.donate-form {
+    width: 100%;
+    max-width: 510px;
+    padding: 40px;
+}
+.donate-form__container {
+    max-width: 430px;
+    width: 100%;
+    margin: auto;
+}
+.donate-form__title {
+    text-align: center;
+}
+.donate-form__list {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 16px 8px;
+    margin: 16px 0;
+}
+.donate-form__list.donate-form__frequency {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+.donate-form__list.donate-form__amount {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.donate-form__list-item {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    list-style-type: none;
+    padding: 18px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background-color: #29323f;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #29323f;
+    text-align: center;
+    cursor: pointer;
+    margin: 0;
+}
+.donate-form__list-item:not(:last-child) {
+    margin-right: 8px;
+}
+.donate-form__list-item.selected {
+    background-color: #e42312;
+    border-color: #e42312;
+}
+.donate-form__amount .donate-form__list-item {
+    background-color: #fff;
+    color: #000;
+}
+.donate-form__amount .donate-form__list-item.selected {
+    background-color: #e42312;
+    color: #fff;
+}
+.donate-form__group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+.donate-form__group > * {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+}
+.donate-form__group-container {
+    position: relative;
+}
+.donate-form__group-container .donate-form__group-currency,
+.donate-form__group-container:after {
+    position: absolute;
+    top: 0;
+    color: #a9a9a9;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.donate-form__group-container .donate-form__group-currency {
+    content: "$";
+    left: 10px;
+    font-size: 19px;
+}
+.donate-form__group-container.monthly:after {
+    content: "/MO";
+    right: 10px;
+}
+.donate-form__group-input:not([type="checkbox"]):not([type="radio"]) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 18px 18px 18px 23px;
+    border: 1px solid #29323f;
+    border-right-width: 0;
+    width: 100%;
+}
+.donate-form__group-submit:not([type="checkbox"]):not([type="radio"]) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    text-align: center;
+    padding: 18px 20px;
+    background: #e42312;
+    color: #fff;
+    border: 1px solid #e42312;
+    font-weight: 800;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+@media (max-width: 440px) {
+    .BBRecurrenceFieldContainer span {
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .BBFormFieldRecurrenceInfo {
+        padding-left: 0 !important;
+    }
+    .entry-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+#bboxdonation_divForm .BBDFormSectionGiftInfo .BBFormRadioList .BBFormRadioLabelGivingLevelSelected {
+    background-color: #e42312;
+    border: 1px solid #e42312;
+}
